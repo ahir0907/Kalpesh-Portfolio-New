@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>calculator</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="utils.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="utils.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-  <h1 class="text-center">Welcome to Calculate me!</h1>
-  <div class="container flex flex-col items-center mx-auto m-w-20">
+  <h1 class="text-center">Welcome to Calculate Me!</h1>
+  <div class="container flex flex-col items-center mx-auto max-w-20">
     <div class="row">
-      <input class="input" type="text"/>
+      <input class="input" type="text" readonly/>
     </div>
     <div class="row">
-      <button class="button">C</button>
+      <button class="button button-clear">C</button>
       <button class="button">%</button>
-      <button class="button">M+</button>
-      <button class="button">M-</button>
+      <button class="button button-memory">M+</button>
+      <button class="button button-memory">M-</button>
     </div>
     <div class="row">
       <button class="button">7</button>
@@ -48,5 +46,4 @@
   </div>
   <script src="script.js"></script>
 </body>
-
 </html>
