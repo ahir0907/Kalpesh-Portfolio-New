@@ -8,7 +8,7 @@ Welcome to my portfolio website! This site showcases my work as a web developer,
 
 ## Live Demo
 
-Check out the live demo of the website: [Portfolio Website](https://kalpeshhadiyaportfolio.netlify.app)
+Check out the live demo of the website: [Portfolio Website](https://kalpeshbio.netlify.app)
 
 ## Features
 
