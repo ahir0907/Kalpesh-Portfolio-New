@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalpesh Portfolio Website</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="images/about.png" type="image/x-icon">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>  
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Kalpesh Hadiya</h1>
+            <p>
+                Hi, I'm kalpesh hadiya, a passionate web developer with a strong foundation in both front-end and
+                back-end technologies. With expertise in HTML, CSS, JavaScript, and frameworks like React and Node.js, I
+                craft dynamic and responsive websites that deliver exceptional user experiences.
+            </p>
+            <!-- <p> Explore my work and get in touch if you're interested in collaborating or learning more about my projects.</p> -->
+
+            <div class="social-media">
+                <a href="https://github.com/ahir0907"><i class='bx bxl-github'></i></a>
+                <a href="https://x.com/kalpeshhadiya09"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/kalpesh_ahir_77/?next=%2F"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/kalpeshhadiya/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="images/Kalpesh Resume.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Photoediter</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video-recording'></i>
+                    <h3>Videoediter</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/rangoli.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hello! I'm kalpesh hadiya, a web developer with a diverse background. I graduated with a B.Sc. in
+                Chemistry in 2022, which equipped me with a strong analytical mindset and problem-solving skills.
+                However, my passion for technology led me to pursue a career in web development.
+            </h3>
+            <p>
+                I completed a full-stack web development course at H&B Computer Education in Ahmedabad, where I gained
+                hands-on experience with a variety of technologies. My skill set includes:
+            </p>
+            <p>
+                &#9755; Front-end: HTML, CSS, JavaScript, React <br>
+                &#9755; Back-end: Node.js, Express.js <br>
+                &#9755; Databases: MongoDB, MySQL
+            </p>
+            <p class="more-content" id="moreContent">
+                My journey has been one of continuous learning and growth, from mastering the basics of web development
+                to tackling complex projects. I'm dedicated to creating innovative and user-friendly web solutions, and
+                I'm always excited about new challenges and opportunities in the tech world.
+
+                Feel free to browse through my portfolio and reach out if you have any questions or if you're interested
+                in collaborating on a project!
+            </p>
+            <a class="btn" onclick="toggleReadMore()" id="readMoreBtn">Read More</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>I create modern, responsive websites using the latest technologies. From building interactive
+                    front-ends with HTML, CSS, and JavaScript to developing robust back-ends with Node.js and
+                    Express.js. </p>
+                <p class="more-content1" id="moreContent1">I ensure your website is functional, user-friendly, and
+                    tailored to your needs.</p>
+                <a class="btn" onclick="toggleReadMore1()" id="readMoreBtn1">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphic Design</h3>
+                <p>I design visually appealing graphics that effectively communicate your brand's message. Whether you
+                    need logos, social media graphics, or marketing materials. </p><br> <br>
+                <p class="more-content2" id="moreContent2">I combine creativity and technical skill to deliver designs
+                    that stand out.</p>
+                <a class="btn" onclick="toggleReadMore2()" id="readMoreBtn2">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Photoediting/Videoediting</h3>
+                <p> I enhance and retouch photos to make them look their best. Whether you need color correction,
+                    background removal, or image restoration, I use professional tools and techniques to achieve
+                    high-quality results.</p>
+                <p class="more-content3" id="moreContent3">I provide professional video editing services to help you
+                    create engaging content. From trimming and cutting footage to adding effects and transitions, I
+                    ensure your videos are polished and captivating.</p>
+                <a class="btn" onclick="toggleReadMore3()" id="readMoreBtn3">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/To-do list.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Clock/To-Do List</h4>
+                    <p>This is an analog clock that I made with HTML CSS and JavaScript</p>
+                    <a href="clock/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/spotify.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Spotify-Web Music Player</h4>
+                    <p>This is a Spotify plugin that I use HTML CSS and JavaScript.</p>
+                    <a href="Project(CSS)/project(CSS).html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/calculator1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Calculator</h4>
+                    <p>this is a Calculator plugin that i use HTML CSS JavaScript.</p>
+                    <a href="calculator/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/Bubble Game1.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Bubble Game</h4>
+                    <p>this is a Bubble Game plugin that i use HTML CSS JavaScript.</p>
+                    <a href="https://66a63a57c81f7a247d946e40--bubblesgames1.netlify.app/"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/photoedit.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Photo editing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="photoedit/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/videoedit.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Video editing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="videoedit/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/Drawing.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Drawing App</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="DrawingApp/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/amazon logo.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>Amazon Clone</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="AmazonClone/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/BMI.jpg" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>BMI-Calculator</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="BMI-Calculator/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/simon_icon-1.png" alt="">
+
+                <div class="portfolio-layer">
+                    <h4>SIMON</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ipsam est.</p>
+                    <a href="simon/index.html"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial design -->
+    <div class="testimonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/ashvin.jpg" alt="">
+                        <h3>Ashvin Ahir</h3>
+                        <p>"Working with kalpesh hadiya was a fantastic experience!
+                            Their expertise in web development is evident in the high-quality work they deliver. They
+                            transformed our ideas into a stunning, functional website with impressive attention to
+                            detail.
+                            Highly recommend their services for anyone looking for a dedicated and skilled web
+                            developer."</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/urvashi.jpg" alt="">
+                        <h3> <a href="https://www.instagram.com/urvashi_ahir_14/"></a> Urvashi Katriya</h3>
+                        <p>"I've had the pleasure of collaborating with kalpesh hadiya on several projects, and their
+                            graphic design skills are exceptional.
+                            They have a keen eye for design and were able to create visuals that perfectly matched our
+                            brand's vision.
+                            Their professionalism and creativity make them a standout in the field."</p>
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="images/hardik.jpg" alt="">
+                        <h3>Dr. Hardik</h3>
+                        <p>"kalpesh hadiya did an amazing job with the photo and video editing for our recent project.
+                            Their attention to detail and ability to enhance our media content exceeded our
+                            expectations.
+                            They are incredibly talented and reliable—definitely a go-to person for top-notch editing
+                            work."</p>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Get In <span>Touch!</span></h2>
+
+        <form action="https://formspree.io/f/xwpelvre" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" name="Name">
+                <input type="email" placeholder="Email Address" name="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" name="Mobile-Number">
+                <input type="text" placeholder="Email Subject" name="Subject">
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message" name="Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- fontawasome  -->
+    <script src='https://kit.fontawesome.com/1ee8f271b9.js'></script>
+
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
